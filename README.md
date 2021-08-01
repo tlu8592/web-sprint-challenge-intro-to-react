@@ -81,6 +81,11 @@ After finishing your required elements, you can push your work further. These go
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. What is React JS and what problems does it solve? Support your answer with concepts introduced in class and from your personal research on the web.
+
+  ReactJS is common JavaScript library that is used to build user interface in web applications. A React application lives in only one DOM element. React solves the problem when it comes to rendering HTML elements to the actual DOM, simplifying the repetition of the standard DOM manipulation 			syntax (i.e., document.getElementById, document.createElement, document.appendChild, etc).
+	In regards to the syntactic simplification, React allows you to type HTML elements within a return statement of a JS function (JSX). In order for that to be recognized, the React library must 			be imported. The elements are rendered to the actual DOM with a feature that was created by the React team called virtual DOM. 	Virtual DOM keeps track of what nodes and state(data) is to be 			rendered to the actual DOM. The DOM syntax that will be used to select which DOM element to append a component to is either document.querySelector or the getElementById as the second argument of ReactDOM.render(), which is only used once.
+  React also solves another problem when it comes to apps where data is constantly changing. In React, there is a process called reconciliation, where the change of the app's state is detected, then updating the virtual DOM. This is where the virtual DOM keeps track of which nodes have been changed due to state changes. And lastly, the changed nodes get updated to the actual DOM.
+
 1. Describe component state.
 1. Describe props.
 1. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
