@@ -20,8 +20,6 @@ const App = () => {
       .catch(err => console.log(err))
   }, []);
 
-  console.log(characterData);
-
   const StyledHeader = styled.h1`
     font-size: 2rem;
   `;
@@ -29,7 +27,7 @@ const App = () => {
   return (
     <div className="App">
       <StyledHeader className="Header">React Wars</StyledHeader>
-      {characterData.map(character => <Character key={character.name} characters={character} />)}
+      {characterData.map(character => <Character characters={character} />)}
     </div>
   );
 }
