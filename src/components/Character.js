@@ -14,11 +14,23 @@ const Character = props => {
         color: white;
     `;
 
+    const StyledH1 = styled.h1`
+        color: blue;
+    `;
+
+    const StyledButton = styled.button`
+        width: 6rem;
+        height: 3.8rem;
+        font-size: 1.3rem;
+        margin-bottom: 10px;
+        border-radius: 10px;
+    `;
+
     return (
         <StyledDiv>
-            <h1>{characters.name}</h1>
+            <StyledH1>{characters.name}</StyledH1>
+            <StyledButton onClick={() => setInfo(!info)}>Info</StyledButton>
             {info === true ? <CharacterDetails characterDetails={characters} /> : false}
-            <button onClick={() => setInfo(!info)}>Info</button>
         </StyledDiv>
     );
 }
