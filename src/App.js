@@ -21,7 +21,7 @@ const App = () => {
   }, []);
 
   const StyledHeader = styled.h1`
-    font-size: 2rem;
+    font-size: 4rem;
   `;
 
   return (
