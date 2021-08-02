@@ -87,5 +87,13 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
   React also solves another problem when it comes to apps where data is constantly changing. In React, there is a process called reconciliation, where the change of the app's state is detected, then updating the virtual DOM. This is where the virtual DOM keeps track of which nodes have been changed due to state changes. And lastly, the changed nodes get updated to the actual DOM.
 
 1. Describe component state.
+
+  A component state is a JavaScript object where data is kept track and managed. For the state to be changed, there is a set variable that is assigned to the useState function (i.e., setData) which allows you to do so, therefore the useState hook must be imported from the React library. 
+
 1. Describe props.
+
+  Props, an abbreviation for properties, is another JavaScript object that allows you to pass in data that is held on state within a component down to multiple components. Once props are set, they are not changeable, unless if there is change of state (with the set variable assigned to the useState function).
+
 1. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
+
+  A side effect refers to anything that affects something outside of a scope of a function that is being executed.(i.e., fetching API data, timers, logging, manual manipulation of DOM) To sync effects in a React component to changes of a certain state or props, simply put the name of the state or prop in the dependency array, which is the second argument of useEffect, after the callback function.
